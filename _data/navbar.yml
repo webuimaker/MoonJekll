@@ -1,0 +1,13 @@
+#_data/navbar.yml
+
+- name: HOME
+  link: /
+
+- name: PORTFOLIO
+  link: /portfolio/
+
+- name: MUSIK
+  link: https://soundcloud.com/dompteurmooner/
+
+- name: Press
+  link: https://www.emanuelmooner.com/press/

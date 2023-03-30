@@ -1,0 +1,30 @@
+{% include head.html %}
+<div class="preloader">
+    <div class="signal">
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+</div>
+</div>
+<!-- ==================================================================================================================================
+TOP BAR
+======================================================================================================================================= -->
+{% if page.url !='/' %}
+    {% include navigation.html %}
+{% endif %}
+<section class="single-blog">
+    <div class="container">
+        <div class="page-title-block" style="{% if page.url =='/' %} margin-top: 100px; {% endif %}">
+            <h3>{{page.title}}</h3>    
+            <p>        </p>	
+        </div>
+        {{ page.section1 }}
+        {{ content }}
+
+    </div>
+
+</section>
+
+{% include footer.html %}

@@ -1,0 +1,29 @@
+---
+layout: default
+---
+<div class="row">
+	<div class="col-md-12">
+		<div class="clearfix">
+			<div class="mz-home-gap"></div>
+            <div class="row" style="margin: 30px -15px 60px -15px;">
+                {% for item in site.data.home %}
+                <div class="col-sm-4" style="padding: 15px;"> 
+                    <div class="mz-home-link ih-item square effect6 bottom_to_top">
+                        <a href="{{item.link}}">  
+                            <div class="img" style="background-image: url('{{item.image}}');"></div>
+                            <div class="info" style="background: rgba(0, 0, 0,.6);">
+                                <div class="info-holder middle center">
+                                    <h3>{{item.name}}</h3>
+                                </div>
+                            </div>
+                            <p>  {{item.subtext}}      </p>
+                        </a>
+                    </div>
+                    <p></p>
+                </div>
+                {% endfor %}
+            </div>
+            <span style="height: 45px; display: block;"></span>
+		</div>								
+	</div>
+</div>

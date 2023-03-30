@@ -1,0 +1,33 @@
+<section class="navigation-bar">
+	<div class="container">
+		<div class="clearfix">
+			<div class="pull-left"></div>
+			<div class="pull-right">
+				<a href="javascript:;" class="total-overlay-trigger"> <i class="fa fa-bars"></i></a>
+			</div>
+			<div class="pull-right small-full-width">
+				<div class="total-overlay-sticky">
+					<div id="navigation">
+						<div class="navbar navbar-default" role="navigation">
+							<ul class="nav navbar-nav">
+								{% for item in site.data.navbar %}
+								<li id="menu-item-791" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-768 current_page_item menu-item-791"><a title="HOME" href="{{item.link}}">{{item.name}}</a></li>
+
+
+								
+								{% endfor %}
+								<!-- <li id="menu-item-791" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-768 current_page_item menu-item-791"><a title="HOME" href="https://www.emanuelmooner.com/">HOME</a></li>
+
+								<li id="menu-item-793" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-793"><a title="PORTFOLIO" href="https://www.emanuelmooner.com/portfolio/">PORTFOLIO</a></li>
+								<li id="menu-item-794" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-794"><a title="MUSIK" target="_blank" href="https://soundcloud.com/dompteurmooner">MUSIK</a></li>
+								<li id="menu-item-792" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-792"><a title="Press" href="https://www.emanuelmooner.com/press/">Press</a></li> -->
+							</ul>
+													</div>
+					</div>
+					
+											<a href="javascript:;" class="total-overlay-sticky-close"></a>
+									</div>
+			</div>
+		</div>
+	</div>	
+</section>

@@ -1,0 +1,135 @@
+/*
+Theme Name: Folia Child Theme
+Author: DJMiMi
+Theme URI: https://themeforest.net/user/DJMiMi
+Author URI: https://themeforest.net/user/DJMiMi
+License: GPL 2.0
+Template: folia
+License URI: license.txt
+Description: Clean and powerfull portfolio and blog theme
+Version: 1.0
+Tags: light
+*/
+
+.nav-div{
+	text-align: right;
+	margin-top: 18px;
+}
+
+.navbar-toggle.button-white.menu{
+	line-height: 57px;
+}
+
+.has-child{
+	border-color: #454545;
+	margin-bottom: 2px;
+}
+
+.dropdown-toggle:hover,
+li[class^="current-"] .has-child{
+	border-color: #aaa;
+}
+
+@media only  screen and (min-width: 768px){
+	.navbar-default .navbar-collapse{
+		text-align: right;
+	}
+}
+
+.sticky_nav{
+	padding: 5px 0px;
+}
+
+@media only screen and (max-width: 768px){
+	#navigation .dropdown-menu{
+		box-shadow: none;
+	}
+	.nav.navbar-nav > li li{
+		border: none;
+	}
+	.nav.navbar-nav{
+		display: block;
+	}
+	.navbar-nav .open .dropdown-menu > li > a{
+		text-align: center;
+	}
+}
+
+.nav.navbar-nav > li > a{
+	font-family: "Montserrat", sans-serif;
+}
+
+/****************************************
+* CUSTOM - Markus Zweng
+****************************************/
+
+/* General */
+
+.portfolio-filters a.active {
+	color: #ed1c2a;
+}
+a:focus {
+	color: #000;
+}
+
+/* iOS force touble tap */
+@media (max-width: 480px) {
+	.ih-item.square.effect6 .info {
+		display: none;
+	}
+	.ih-item.square.effect6 a:hover .info {
+		display: block;
+	}
+}
+
+
+/* Home */
+
+.mz-home-gap {
+	margin-top: 80px;
+	width: 100%;
+}
+@media (max-width: 480px) {
+	.mz-home-gap {	
+		margin-top: 0px;
+	}
+}
+
+.page-id-768 .page-title-block {
+	/* margin-top: 100px; */
+}
+.page-id-768 .navigation-bar,
+.page-id-768 .copyright {
+	/* display: none; */
+}
+
+.mz-home-link.ih-item.square, 
+.mz-home-link .img {
+	height: 275px;
+}
+.mz-home-link.ih-item.square.effect6 .info h3 {
+	font-size: 25px;
+}
+section .row .mz-home-link.ih-item.square:not(.effect1) .info h3:after {
+	border: 0;
+	height: 0;
+}
+
+
+/* Portfolio Detail */
+.post-share {
+    text-align: center;
+}
+
+.post-share a:hover {
+	background: #ed1c2a;
+	color: #fff !important;
+}
+
+/* Footer */
+.copyright .social  {
+	display: none;
+}
+.copyright .copyrights-text p {
+	margin: 0;
+}
