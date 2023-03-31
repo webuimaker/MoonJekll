@@ -1,29 +1,24 @@
-#_data/navbar.yml
-
 - name: Portfolio
   link: /portfolio/
   image: /uploads/2016/02/Teufelsrad-2-768x576.jpg
-  subtext: 
-
+  subtext: null
 - name: Everyday Collage
-  link: https://www.instagram.com/dompteurmooner/
+  link: 'https://www.instagram.com/dompteurmooner/'
   image: /uploads/2022/06/doubleopening_Moonie.jpg
-  subtext: 
-
-
+  subtext: null
 - name: News
   link: /portfolio/news/
   image: /uploads/2016/02/Ash-Reignite-4.jpg
-  subtext: 
-
+  subtext: null
 - name: Sound
-  link: https://soundcloud.com/dompteurmooner
-  image: https://i1.sndcdn.com/avatars-000037446260-dxnsp2-t200x200.jpg
-  subtext: 
-
-
+  link: 'https://soundcloud.com/dompteurmooner'
+  image: 'https://i1.sndcdn.com/avatars-000037446260-dxnsp2-t200x200.jpg'
+  subtext: null
 - name: Press
   link: /press/
   image: /uploads/2016/02/SZ-768x1058.jpg
-  subtext: 
-
+  subtext: null
+- name: Vivek
+  link: /test/
+  image: /uploads/2016/02/SZ-768x1058.jpg
+  subtext: vivek here
