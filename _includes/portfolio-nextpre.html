@@ -1,0 +1,46 @@
+
+{% if page.collection %}
+    {% assign links = site[page.collection]  %}
+{% endif %}
+
+{% for link in links %}
+	{% if link.title == page.title %}
+		{% unless forloop.first %}
+			{% assign prev = tmpprev %}
+		{% endunless %}
+		{% unless forloop.last %}
+			{% assign next = links[forloop.index] %}
+		{% endunless %}
+	{% endif %}
+	{% assign tmpprev = link %}
+{% endfor %}
+
+
+
+<div class="next-prev">
+    <hr>
+    <div class="row">
+        <div class="col-sm-5">
+            {% if page.url != "/portfolio/" %}
+                {% if prev %}         
+                    <p><a href="{{ prev.url}}"><i class="fa fa-angle-left"></i> {{ prev.title }}</a></p>
+                {% endif %}
+            {% endif %}
+        </div>
+        <div class="col-sm-2">
+            <div class="text-center">
+                <a href="/">
+                    <i class="fa fa-th-large"></i>
+                </a>
+            </div>
+        </div>
+        <div class="col-sm-5 text-right">
+            {% if page.url != "/portfolio/" %}
+                {% if next %}
+                    <p><a href="{{ next.url}}">{{ next.title }} <i class="fa fa-angle-right"></i></a></p>
+                {% endif %}
+            {% endif %}
+        </div>
+    </div>
+    <hr>
+</div>

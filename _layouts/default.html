@@ -17,10 +17,11 @@ TOP BAR
 <section class="single-blog">
     <div class="container">
         <div class="page-title-block" style="{% if page.url =='/' %} margin-top: 100px; {% endif %}">
-            <h3>{{page.title}}</h3>    
-            <p>        </p>	
+            <h3>{{page.title}}</h3>   
+            {% if page.subtext %} 
+            <p>{{page.subtext}}</p>	
+            {% endif %}
         </div>
-        {{ page.section1 }}
         {{ content }}
 
     </div>

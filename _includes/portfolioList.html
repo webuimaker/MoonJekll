@@ -1,0 +1,25 @@
+<div class="row">			
+    <div class="col-md-12">
+        <div class="clearfix portfolio-section">
+            <div class="row portfolios-container">						
+                {% for cookie in site.portfolio %}                   
+                    {% if cookie.url != "/portfolio/index.html" %}
+                        <div class="col-sm-6" style="padding: 15px;">								
+                            <div class="ih-item ZXYfIoBgNw square effect6 bottom_to_top" data-cats="[]">
+                                <a href="{{cookie.url}}" class="" data-type="">
+                                    <i class="fa fa-spin fa-circle-o-notch lazy-preload"></i><div class="img lazy" data-original="{{cookie.image}}"></div>
+                                    <div class="info">
+                                        <div class="info-holder middle center">
+                                            <h3> {{cookie.title}} </h3>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                </a>								
+                            </div>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
