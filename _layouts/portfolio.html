@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+{% if page.url == "/portfolio/index.html" %}
+    {%  include portfolioList.html %}  
+
+    {% else %}
+        
+    <div class="post-content">
+            <div class="clearfix main-margin">
+            
+                {{ content }}
+
+        {%  include type-form.html %}
+            </div>
+            
+        {%  include share.html %}
+        {%  include portfolio-nextpre.html %}
+
+
+        </div>
+{% endif %}
+

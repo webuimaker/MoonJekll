@@ -139,3 +139,30 @@ section .row .mz-home-link.ih-item.square:not(.effect1) .info h3:after {
 .copyright .copyrights-text p {
 	margin: 0;
 }
+
+
+/*********** PORTFOLIO TILE ***********/
+
+
+.ZXYfIoBgNw.ih-item{
+			
+	height: 371px;
+}
+
+.ZXYfIoBgNw.ih-item .img{
+	height: 371px;	
+}
+
+section .row .ZXYfIoBgNw.ih-item.square .info{
+	
+}
+
+section .row .ZXYfIoBgNw.ih-item.square .info .info-holder h3,
+section .row .ZXYfIoBgNw.ih-item.square .info .info-holder h3:after{
+	
+	
+}
+
+section .row .ZXYfIoBgNw.ih-item.square .info .info-holder p{
+		
+}

@@ -36,14 +36,14 @@ plugins:
 
 jekyll_admin:
   hidden_links:
-    - pages
-    - configuration
+    # - pages
+    # - configuration
   homepage: "pages"
 
 collections:
-  posts:
+  portfolio:
     output: true
-    sidebar_label: News
+    sidebar_label: portfolio
 
 # Exclude from processing.
 # The following items will not be processed, by default.
